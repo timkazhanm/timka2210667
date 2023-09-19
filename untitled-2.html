@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(229, 255, 0);">
+    <h1>Student information Form </h1>
+    <div>
+    <form action="/action_page.php">
+        <fieldset>
+          <legend>Personal information:</legend>
+          First name:<br>
+          <input type="text" name="firstname" value="Mickey"><br>
+          Last name:<br>
+          <input type="text" name="lastname" value="Mouse"><br><br>
+          <input type="submit" value="Submit">
+
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+<br>
+          <select name="gender">
+            <option value="">Please select one…</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="non-binary">Non-Binary</option>
+            <option value="other">Other</option>
+            <option value="Prefer not to answer">Perfer not to Answer</option>
+          </select>
+        </fieldset>
+      </form>
+      </div>
+
+      <div>
+        form action="/action_page.php">
+  <fieldset>
+    <legend>Contact information:</legend>
+	First name:<br>
+    <label for="email">email:</label>
+
+    <input type="email" id="email" pattern=".+@globex\.com" size="30" required />
+    <br>
+
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+     <br>
+   <p> address
+     <textarea name="Address" rows="5" cols="15"></textarea>
+    </p>  
+  </fieldset>
+</form>
+
+      </div>
+
+      <div>
+        <form action="/action_page.php">
+            <fieldset>
+              <legend>Education information:</legend>
+              StudentID:<br>
+              <input type="text" name="StudentID" value=""><br>
+              Major:<br>
+              <input type="text" name="Major" value=""><br><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+          
+      </div>
+
+      <p> comments :
+        <textarea name="message" rows="10" cols="30">
+        
+            </textarea>
+      </p>
+
+      <div>
+        <form>
+            <input type="radio" name="gender" value="get" checked> get<br>
+            <input type="radio" name="gender" value="post"> post<br>
+
+          </form>
+      </div>
+</body>
+</html>
